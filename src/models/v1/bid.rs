@@ -110,6 +110,7 @@ mod methods {
 
         bid.remove();
         assert!(bid.removed_at.is_some());
+        assert!(!bid.is_active());
     }
 
     struct TestData {}
